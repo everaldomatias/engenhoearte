@@ -3,6 +3,9 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
+img {
+	max-width: 100%;
+}
 body {
 	color: #333333;
 	font-family: Helvetica, Arial, Sans-Serif;
@@ -198,4 +201,91 @@ footer .mapa {
 footer p {
 	display: block;
 	text-align: center;
+}
+/* Responsive max 1024px */
+@media ( max-width: 1024px ) {
+	.container.conteudo {
+		padding: 0 15px;
+	}
+	.container.conteudo p {
+	}
+
+
+}
+/* Responsive max 768px */
+@media ( max-width: 768px ) {
+	header .logo {
+		max-width: 250px;
+	}
+	header .menu {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	header .menu a {
+		display: inline-block;
+	}
+	.slider {
+		margin-bottom: 0;
+	}
+	
+}
+/* Responsive max 520px */
+@media ( max-width: 520px ) {
+	header .logo {
+		display: block;
+		float: none;
+		margin: 0 auto;
+	}
+	header .menu a {
+		padding: 10px 10px;
+	}
+	body.home .beneficios {
+		clear: both;
+		margin-bottom: 15px;
+		overflow: hidden;
+	}
+	.link-portfolio,
+	.link-contato,
+	.link-sobre-nos {
+		float: none;
+		margin: 15px auto;
+		width: 100%;
+	}
+	.link-portfolio a,
+	.link-contato a,
+	.link-sobre-nos a {
+		padding-bottom: 30px;
+		padding-top: 30px;
+	}
+	footer .logo {
+		display: none;
+	}
+	footer .menu {
+		display: block;
+		float: none;
+		padding: 0 15px;
+		text-align: center;
+		width: 100%;
+	}
+	footer .menu a {
+		display: inline-block;
+		padding: 10px;
+	}
+	footer .infos {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	footer .infos p {
+		text-align: center;
+	}
+	footer .mapa {
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+
+
 }
