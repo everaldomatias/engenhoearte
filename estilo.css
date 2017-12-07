@@ -258,6 +258,12 @@ footer p {
 		padding-bottom: 30px;
 		padding-top: 30px;
 	}
+	body.portfolio .conteudo .lista-portfolio {
+		overflow: hidden;
+	}
+	body.portfolio .conteudo .lista-portfolio img {
+		width: 50%;
+	}
 	footer .logo {
 		display: none;
 	}
