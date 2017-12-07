@@ -215,9 +215,13 @@ footer p {
 /* Responsive max 768px */
 @media ( max-width: 768px ) {
 	header .logo {
+		display: block;
+		float: none;
+		margin: 0 auto;
 		max-width: 250px;
 	}
 	header .menu {
+		clear: both;
 		float: none;
 		text-align: center;
 		width: 100%;
@@ -228,15 +232,40 @@ footer p {
 	.slider {
 		margin-bottom: 0;
 	}
-	
+	body.contato .conteudo {
+		padding: 30px 15px;
+	}
+	footer .menu {
+		display: block;
+		float: none;
+		padding: 0 15px;
+		text-align: center;
+		width: 100%;
+	}
+	footer .menu a {
+		display: inline-block;
+		padding: 10px;
+	}
+	footer .logo {
+		display: none;
+	}
+	footer .infos {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	footer .infos p {
+		text-align: center;
+	}
+	footer .mapa {
+		display: block;
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
 }
 /* Responsive max 520px */
 @media ( max-width: 520px ) {
-	header .logo {
-		display: block;
-		float: none;
-		margin: 0 auto;
-	}
 	header .menu a {
 		padding: 10px 10px;
 	}
@@ -263,34 +292,6 @@ footer p {
 	}
 	body.portfolio .conteudo .lista-portfolio img {
 		width: 50%;
-	}
-	footer .logo {
-		display: none;
-	}
-	footer .menu {
-		display: block;
-		float: none;
-		padding: 0 15px;
-		text-align: center;
-		width: 100%;
-	}
-	footer .menu a {
-		display: inline-block;
-		padding: 10px;
-	}
-	footer .infos {
-		display: block;
-		float: none;
-		width: 100%;
-	}
-	footer .infos p {
-		text-align: center;
-	}
-	footer .mapa {
-		display: block;
-		float: none;
-		text-align: center;
-		width: 100%;
 	}
 }
 
